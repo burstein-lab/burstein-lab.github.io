@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<!--
+	This page os best on Landed by HTML5 UP
+	html5up.net | @ajlkn
+	used under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Burstein Lab's Research</title>		<meta charset="utf-8" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="David Burstein's lab webpage">
+		<meta name="keywords" content="CRISPR,Cas,CRISPR-Cas,LLM,LLMs,Large Language Models,Antibiotics,Antibiotic-resistance,Metagenomics,Machine-learning,Microbiology,Deep-learning,Antimicrobial-resistance">
+		<meta name="author" content="David Burstein, Dudu Burstein,דודו בורשטיין,דוד בורשטיין">
+		<link rel="stylesheet" href="assets/css/main2.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload landing">
+		<div id="page-wrapper">
+			
+			<!-- Header -->
+			<header id="header">
+
+				<h1 id="logo"><a href="https://www.tau.ac.il/~davidbur/">The Burstein Lab</a></h1>
+
+				<nav id="nav">
+					<ul>
+						<li><a href="https://www.tau.ac.il/~davidbur/" class="scrolly">Home</a></li>
+						<li><a href="#main">Research Projects</a>
+							<ul>
+								<li><a href="#LeadingRegion">Plasmid anti-defense</a></li>
+								<li><a href="#MicroNLP">Microbial language models</a></li>
+								<li><a href="#AMR">Discovery of resistance genes</a></li>
+								<li><a href="#CRISPRdx">CRISPR-based diagnostics</a></li>
+								<li><a href="#InterMicrobe">Other studied systems</a></li>
+							</ul>
+						</li>
+						<li><a href="https://www.tau.ac.il/~davidbur/#_pub_" class="scrolly">Publication Highlights</a></li>
+						<li>
+							<a href="#_team_" class="scrolly">Our Team</a>
+							<ul>
+								<li><a href="https://tau.ac.il/~davidbur#_team_">Current</a></li>
+								<li><a href="alumni.html">Alumni</a></li>
+								<li><a href="babies.html">Lab babies</a></li>
+							</ul>
+						</li>						<li><a href="https://www.tau.ac.il/~davidbur/#_contact_" class="scrolly">Contact</a></li>
+						<li><a target="_blank" rel="noopener" href="https://twitter.com/BursteinLab" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>				
+						<li><a target="_blank" rel="noopener" href="https://github.com/burstein-lab" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="mailto:davidbur@tauex.tau.ac.il" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+
+					  </ul>
+				</nav>
+			</header>
+
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Our Research</h2>
+							<p>We are dedicated to performing research at the forefront of computational microbiology, by employing cutting-edge methodologies to investigate the function of genes and proteins in microbes.
+								<BR>Here are some of the projects we are working on in the lab:</p>
+						</header>
+								<!-- <p><strong>We are dedicated to performing research at the forefront of computational microbiology, 
+									by employing cutting-edge methodologies to investigate the function of genes and proteins in microbes.
+									Here are some of the projects we are working on in the lab: -->
+								</strong></p>
+
+								<!-- Content -->
+								<section id="LeadingRegion">
+									<hr>
+									<a href="#" class="image fit"><img src="images/shielded_banner.jpg" alt="" /></a>
+									<h3>The Tactical Arsenal of Plasmids: Overcoming Host Defenses</h3>
+									Plasmids and other conjugative elements facilitate the horizontal transfer of genes encoding various functions, including antibiotic resistance and virulence factors. Yet, their establishment in a new bacterial host isn't straightforward due to potent host defense mechanisms such as CRISPR-Cas systems, SOS response genes, restriction enzymes, and other systems designed to target foreign DNA. So, how do plasmids manage to transfer to recipient bacteria with such efficiency?
+									<BR><BR>
+									Our recent investigations have shed light on the countermeasures employed by conjugative elements. They possess a repertoire of anti-defense genes strategically positioned in their leading region, ensuring these genes are among the first to engage host defenses upon entry. These genes often cluster into distinct "islands," suggesting coordinated regulation and synergistic functionality.
+									The outcomes of our research hold the potential to uncover novel anti-defense systems within the numerous uncharacterized gene families encoded in the leading region. Furthermore, our findings offer a clearer understanding of the dynamics underlying horizontal gene transfer. Recognizing these anti-defense strategies could play a pivotal role in mitigating the proliferation of antibiotic resistance and other adverse traits. Equally important, these insights could guide the engineering of mobile genetic elements for biotechnological use.
+									<BR><BR>
+									Further details can be found in our
+									<i>Nature</i>
+									paper: <a target="_blank"
+											  rel="noopener"
+											  href="https://doi.org/10.1038/s41586-024-07994-w">A diverse repertoire of anti-defense systems is encoded in the leading region of plasmids</a>.
+									<BR>
+									Also check out our review on gene expression in the leading region of plasmids: <a target="_blank"
+											  rel="noopener"
+											  href="https://doi.org/10.1016/j.plasmid.2025.102754">Strategies for zygotic gene expression during plasmid establishment</a>.
+									<BR><BR>
+								
+							<section id="MicroNLP">
+								<a href="#" class="image fit"><img src="images/nlp_dna_book.narrower.jpg" alt="" /></a>
+								<h3>"Reading" Microbial Genomes Using Natural Language Processing Approaches</h3>
+								One of our main interests is the integration of techniques adopted from natural language processing (NLP) 
+								to understand "gene syntax and semantics." 
+								In our initial work on the topic, we treated genes as words and genomic fragments as sentences. 
+								Leveraging NLP methodologies, we successfully predicted the function of previously uncharacterized genes with high accuracy. 
+								Stemming from this research, we introduced the GeNLP web server, 
+								a platform that explores the genomic contextual relationships of over 500,000 microbial protein families. 
+								
+								We are now integrating transformer-based large language models, 
+								harnessing state-of-the-art NLP models to better understand different aspects of microbial systems through this novel lens.
+								<BR><BR>
+								
+								For more details about our approach, you are welcome to read our initial paper on the subject:
+									<a target="_blank" rel="noopener" href="https://www.nature.com/articles/s41467-022-33397-4">Deciphering microbial gene function using natural language processing</a>. 
+								Additionally, our <a target="_blank"
+								rel="noopener"
+								href="https://gnlp.bursteinlab.org/">GeNLP
+								web server</a> is available for
+								exploring your gene families of interest
+								(details in our 
+								<a target="_blank" rel="noopener" href="https://doi.org/10.1093/bioinformatics/btae034">GeNLP paper</a>).
+								Also check out our recent collaborative
+								study with the Stern lab: 
+								<a target="_blank" rel="noopener" href="https://doi.org/10.1038/s41467-024-44803-4">Using big sequencing data to identify chronic SARS-Coronavirus-2 infections</a>.
+								<BR><BR>
+								Finally, you are welcome to read <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2506.02212"> our comprehensive review on NLP applications in genomics, transcriptomics, and proteomics </a>, which covers the main language models, current limitations, and future directions in the field.
+
+
+								</section>
+								
+								
+
+								<section id="AMR"></section>
+									<a href="#" class="image fit"><img src="images/AMR_banner_dark.jpg" alt="" /></a>
+									<h3>Uncovering Hidden Antimicrobial Resistance Genes Through Machine Learning</h3>
+									The growing threat of antibiotic resistance poses a significant health crisis and is predicted to cause millions of deaths across the globe if not properly mitigated. Therefore, it is highly important to devise methods for early detection of antimicrobial resistance genes (ARGs). Traditional methods for ARG detection rely heavily on sequence similarity searches against existing databases, inherently limiting their ability to identify novel resistance genes. To overcome this limitation, we developed <a target="_blank" rel="noopener" href="https://doi.org/10.1186/s40168-025-02055-4">DRAMMA</a>, a machine learning model that leverages a variety of features, such as genomic and evolutionary contextual signals, to predict previously unknown ARGs that share no sequence similarity with known resistance genes. 
+								</section>
+
+
+								<section id="CRISPRdx">
+								<hr>
+								<a href="#" class="image fit"><img src="images/SpaceCRISPR.jpg" alt="" /></a>
+								<!-- <h3>CRISPR for Genetic Diagnostics on Earth and Beyond...<span class="icon brands alt fa-rocket"></span></h3> -->
+								<h3>CRISPR for Genetic Diagnostics on Earth and Beyond...</h3>
+								In close collaboration with 
+								<!-- <a target="_blank" rel="noopener" href="https://gurpines.wixsite.com/labsite">Dr. Gur Pines</a> -->
+								Dr. Gur Pines
+								from the Volcani Institute, we are harnessing new CRISPR-Cas systems for rapid and portable genetic diagnostics. 
+								CRISPR is a powerful tool for genetic engineering, but it can also serve diagnostic purposes. 
+								CRISPR-based detection assays exhibit high sensitivity and specificity, capable of identifying diverse genetic targets. 
+								They are also relatively easy to use, making them particularly suitable for applications in remote or resource-limited settings. 
+								Initially, we began by employing these assays for 
+								<a target="_blank" rel="noopener" href="https://onlinelibrary.wiley.com/doi/10.1002/ps.7173">the detection of pests in agricultural produce</a> 
+								to reduce spoilage and minimize pesticide usage. The next natural step for the project was to reach for the stars!
+								<BR><BR>
+								Being so portable and easy to use, we thought CRISPR-based diagnostics would be a natural candidate for genetic diagnostics during 
+								space missions. 
+								Thanks to Eytan Stibbe and the Rakia mission, we recently had a chance to explore this onboard the International Space Station. 
+								In the first commercial flight of SpaceX, Eytan tested an isothermal amplification assay coupled with Cas12a activity in microgravity, 
+								and we showcased their potential to detect even tiny amounts of DNA in microgravity. Details can be found in our paper: 
+								"<a target="_blank" rel="noopener" href="https://www.sciencedirect.com/science/article/pii/S0956566323004219">CRISPR-Based Genetic Diagnostics in Microgravity</a>." 
+								We hope that CRISPR-based genetic diagnostics could serve for monitoring the crew's health, 
+								the spacecraft's surroundings, and potentially, the microbiome of plants cultivated in space farms.
+								<BR><BR>
+									<hr>
+								</section>
+							<section id="InterMicrobe">
+								<a href="#" class="image fit"><img src="images/microbes_interacting.jpg" alt="" /></a>
+								<h3>Exploring Mechanisms of Microbial Interactions</h3>
+								We are fascinated by the intricate microbial interactions with each other, their predators, hosts, and surroundings. 
+								Our pursuit leads us to employ diverse methodologies in uncovering CRISPR-Cas systems, antimicrobial resistance genes, 
+								secretion mechanisms, and translocated effectors. 
+								You are more than welcome to check out our publications on these topics and more on 
+								<a target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=SfeKvjEAAAAJ">Google Scholar</a>.								<BR><BR>
+							</section>
+					</div>
+				</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<!--
+									<ul class="icons">
+										<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+										<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="mailto:davidbur@tauex.tau.ac.il" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+									</ul>
+				-->
+									<ul class="copyright">
+										<li>&copy; Burstein lab. All rights reserved.</li><li>Based on design of: <a  target="_blank" rel="noopener" href="http://html5up.net">HTML5 UP</a></li>
+									</ul>
+								</footer>
+				
+						</div>
+				
+						<!-- Scripts -->
+							<script src="assets/js/jquery.min.js"></script>
+							<script src="assets/js/jquery.scrolly.min.js"></script>
+							<script src="assets/js/jquery.dropotron.min.js"></script>
+							<script src="assets/js/jquery.scrollex.min.js"></script>
+							<script src="assets/js/browser.min.js"></script>
+							<script src="assets/js/breakpoints.min.js"></script>
+							<script src="assets/js/util.js"></script>
+							<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
