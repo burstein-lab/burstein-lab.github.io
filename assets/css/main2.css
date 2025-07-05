@@ -3017,6 +3017,10 @@ input, select, textarea {
     	padding-bottom: 4em;
 	}
 
+	#_pub_ .goto-next {
+	    bottom: 1em !important;
+	}
+
 		.spotlight:nth-last-of-type(1) {
 			z-index: 1;
 		}
