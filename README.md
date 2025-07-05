@@ -58,22 +58,21 @@ The Burstein Lab conducts computational microbiology research using cutting-edge
 ### Adding Images
 1. Go to the `images/` folder
 2. Click "Add file" → "Upload files"
-3. Drag and drop your images
+3. Drag and drop your images (for members we use circular pictures)
 4. Commit the changes
 5. Reference them in HTML as `images/your-image.jpg`
 
 ### Adding Team Members
-1. Edit the appropriate HTML file (`index.html` for current members, `alumni.html` for alumni)
+1. Edit the appropriate HTML file (`index.html` for current members, `alumni.html` for alumni, and most importantly `babies.html`)
 2. Copy an existing team member section
 3. Update the image path, name, email, and description
 4. Commit changes
 
-## 🎨 Design Credits
+## 🙏 Credits
 This website is based on the "Landed" template by [HTML5 UP](https://html5up.net/), used under the [Creative Commons Attribution 3.0 License](https://html5up.net/license).
 
 ## 📧 Contact
 **David (Dudu) Burstein**  
-Principal Investigator  
 Email: davidbur@tauex.tau.ac.il  
 Office: Green Building, Room 239  
 Tel Aviv University, Israel
