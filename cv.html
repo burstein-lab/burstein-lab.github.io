@@ -17,6 +17,7 @@
       border-radius: 6px;
       font-size: 14px;
       align-items: center;
+      gap: 8px;
     }
     #dlbtn-mobile {
       display: none;
@@ -27,11 +28,9 @@
       background: #2563eb;
       color: white;
       text-decoration: none;
-      font-family: sans-serif;
       width: 56px;
       height: 56px;
       border-radius: 50%;
-      font-size: 24px;
       align-items: center;
       justify-content: center;
     }
@@ -43,8 +42,20 @@
 </head>
 <body style="margin:0;overflow:hidden;height:100vh">
 
-  <a href="DavidBurstein.CV.pdf" download id="dlbtn-desktop">⬇ Download CV</a>
-  <a href="DavidBurstein.CV.pdf" download id="dlbtn-mobile">⬇</a>
+  <a href="DavidBurstein.CV.pdf" download id="dlbtn-desktop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 24 24">
+      <path d="M12 16l-6-6h4V4h4v6h4l-6 6z"/>
+      <path d="M4 20h16v-2H4v2z"/>
+    </svg>
+    Download CV
+  </a>
+
+  <a href="DavidBurstein.CV.pdf" download id="dlbtn-mobile">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" viewBox="0 0 24 24">
+      <path d="M12 16l-6-6h4V4h4v6h4l-6 6z"/>
+      <path d="M4 20h16v-2H4v2z"/>
+    </svg>
+  </a>
 
   <iframe 
     src="https://docs.google.com/viewer?url=https://burstein-lab.github.io/DavidBurstein.CV.pdf&embedded=true"
