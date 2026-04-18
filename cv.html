@@ -1,6 +1,3 @@
-The media query may not be triggering. Replace the JS-free approach with an explicit screen-width check in JavaScript to force it:
-
-```html
 <!DOCTYPE html>
 <html>
 <body style="margin:0;overflow:hidden;height:100vh">
@@ -12,15 +9,16 @@ The media query may not be triggering. Replace the JS-free approach with an expl
     width="100%" height="100%" frameborder="0">
   </iframe>
   <script>
-    const btn = document.getElementById('dlbtn');
-    if (window.innerWidth <= 600) {
-      btn.innerHTML = '⬇';
-      btn.style.cssText += 'width:56px;height:56px;border-radius:50%;font-size:24px;';
-    } else {
-      btn.innerHTML = '⬇ Download CV';
-      btn.style.cssText += 'padding:8px 16px;border-radius:6px;font-size:14px;';
-    }
+    document.addEventListener('DOMContentLoaded', function() {
+      const btn = document.getElementById('dlbtn');
+      if (window.innerWidth <= 500) {
+        btn.innerHTML = '⬇';
+        btn.style.cssText += 'width:56px;height:56px;border-radius:50%;font-size:24px;';
+      } else {
+        btn.innerHTML = '⬇ Download CV';
+        btn.style.cssText += 'padding:8px 16px;border-radius:6px;font-size:14px;';
+      }
+    });
   </script>
 </body>
 </html>
-```
