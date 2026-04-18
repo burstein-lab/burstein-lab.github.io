@@ -1,24 +1,55 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    #dlbtn-desktop {
+      display: flex;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      z-index: 999;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      font-family: sans-serif;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+      align-items: center;
+    }
+    #dlbtn-mobile {
+      display: none;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      z-index: 999;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      font-family: sans-serif;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      font-size: 24px;
+      align-items: center;
+      justify-content: center;
+    }
+    @media (max-width: 500px) {
+      #dlbtn-desktop { display: none; }
+      #dlbtn-mobile  { display: flex; }
+    }
+  </style>
+</head>
 <body style="margin:0;overflow:hidden;height:100vh">
-  <a href="DavidBurstein.CV.pdf" download id="dlbtn"
-     style="position:fixed;bottom:10px;right:10px;z-index:999;background:#2563eb;color:white;text-decoration:none;font-family:sans-serif;display:flex;align-items:center;justify-content:center;">
-  </a>
+
+  <a href="DavidBurstein.CV.pdf" download id="dlbtn-desktop">⬇ Download CV</a>
+  <a href="DavidBurstein.CV.pdf" download id="dlbtn-mobile">⬇</a>
+
   <iframe 
     src="https://docs.google.com/viewer?url=https://burstein-lab.github.io/DavidBurstein.CV.pdf&embedded=true"
     width="100%" height="100%" frameborder="0">
   </iframe>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const btn = document.getElementById('dlbtn');
-      if (window.innerWidth <= 500) {
-        btn.innerHTML = '⬇';
-        btn.style.cssText += 'width:56px;height:56px;border-radius:50%;font-size:24px;';
-      } else {
-        btn.innerHTML = '⬇ Download CV';
-        btn.style.cssText += 'padding:8px 16px;border-radius:6px;font-size:14px;';
-      }
-    });
-  </script>
+
 </body>
 </html>
